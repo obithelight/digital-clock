@@ -117,8 +117,8 @@ div span {
   @media (max-width: 480px) {
     h2 {
         text-transform: uppercase;
-        letter-spacing: .9rem;
-        font-size: 1.3rem;
+        letter-spacing: .4rem;
+        font-size: 1.2rem;
         text-align: center;
     }
     
@@ -130,31 +130,26 @@ div span {
     
     div span {
         display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        height: 8rem;
-        width: 14rem;
+        height: 6rem;
+        width: 12rem;
         background: cadetblue;
-        font-size: 4rem;
+        font-size: 3rem;
         color: white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
     }
 
     #ampm {
         display: flex;
         background: cadetblue;
         color:white;
-        height: 8rem; 
+        height: 6rem; 
         opacity: .9;
         font-weight: normal;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .morning {
         display: flex;
-        height: 4rem;
-        margin-top: 8rem;
+        margin-top: 6rem;
         background: grey;
         color: black;
         font-size: 1rem;
