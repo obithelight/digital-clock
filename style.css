@@ -104,7 +104,7 @@ div span {
     } 
     
     .clock .text {
-        height: 4rem;
+        height: 2rem;
         font-size: 1rem;
         text-transform: uppercase;
         color: black;
@@ -115,6 +115,10 @@ div span {
   } 
 
   @media (max-width: 480px) {
+    body {
+        height: 100vh;
+    }
+    
     h2 {
         text-transform: uppercase;
         letter-spacing: .4rem;
@@ -130,10 +134,10 @@ div span {
     
     div span {
         display: flex;
-        height: 6rem;
-        width: 12rem;
+        height: 4rem;
+        width: 8rem;
         background: cadetblue;
-        font-size: 3rem;
+        font-size: 2rem;
         color: white;
     }
 
@@ -141,7 +145,7 @@ div span {
         display: flex;
         background: cadetblue;
         color:white;
-        height: 6rem; 
+        height: 4rem; 
         opacity: .9;
         font-weight: normal;
         font-size: 2rem;
@@ -149,9 +153,11 @@ div span {
 
     .morning {
         display: flex;
-        margin-top: 6rem;
+        margin-top: 4rem;
         background: grey;
+        height: 2rem;
         color: black;
         font-size: 1rem;
+        font-weight: bold;
     }
   }
