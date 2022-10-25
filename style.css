@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    background: url(https://images.unsplash.com/photo-1447727214830-cbcbf097b52c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=996&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+}
+
+.clock {
+    display: flex;
+}
+
+.clock div {
+    position: relative;
+    margin: .5rem;
+}
+
+div span {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+    width: 10rem;
+    background: cadetblue;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+
+}
+
+.clock .text {
+    height: 4rem;
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: black;
+    background: grey;
+    font-weight: bold;
+    opacity: .7;
+}
+
+#ampm {
+    background: gray;
+    color: black;
+    font-size: 4rem;
+    position: absolute;
+    height: 7rem;
+}
+.morning {
+    text-transform: uppercase;
+    margin-top: 7rem;
+    height: 4rem;
+    font-size: .8rem;
+    color: white;
+
+}
+ 
+/*******MEDIA QUERY**********/
+
+/* Desktop first */
+@media (max-width: 700px) {
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .clock {
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    div span {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+        width: 8rem;
+        background: cadetblue;
+        font-size: 3rem;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    }
+
+    #ampm, .morning {
+        display: none;
+    } 
+    
+    .clock .text {
+        height: 4rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: black;
+        background: grey;
+        opacity: .7;
+    }
+    
+  } 
+
+  @media (max-width: 480px) {
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: .9rem;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    .clock {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    div span {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 8rem;
+        width: 14rem;
+        background: cadetblue;
+        font-size: 4rem;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    }
+
+    #ampm {
+        display: flex;
+        background: cadetblue;
+        color:white;
+        height: 8rem; 
+        opacity: .9;
+        font-weight: normal;
+        font-size: 3rem;
+    }
+
+    .morning {
+        display: flex;
+        height: 4rem;
+        margin-top: 8rem;
+        background: grey;
+        color: black;
+        font-size: 1rem;
+    }
+  }
